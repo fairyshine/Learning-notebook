@@ -8,5 +8,7 @@
 使用IDE是spyder，因为 run cell 真的很方便，不需要建立太多代码文件。
 我的第一本py入门书，嘻嘻
 讲的内容很基础，跟着打一遍代码就会了。
-
+### Python爬虫北京理工Mooc
+<https://www.bilibili.com/video/av9784617"B站视频地址">
+讲了requests库和scrapy库，还是挺实用的，课程时间也很短。
 ## More...
