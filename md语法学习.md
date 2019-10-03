@@ -31,6 +31,8 @@ title可加可不加
 [简书](http://jianshu.com)
 [百度](http://baidu.com)
 
+# 表格
+
 - 列表内容
 + 列表内容
 * 列表内容
@@ -61,6 +63,8 @@ title可加可不加
 关羽|打|二哥
 张飞|骂|三弟
 
+# 代码块
+
 `代码内容`
 
 `create database hero;`
@@ -77,51 +81,48 @@ title可加可不加
     }
     fun();
 ```
+# 流程图
 
 ```flow
-st => start:开始
-op => operation: My Operation
-cond => condition: Yes or No?
-e => end
-st -> op -> cond
-cond(yes) -> e
-cond(no) -> op
+st=>start: 开始|past
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
 ```
 
-```flow                     // 流程
-st=>start: 开始|past:> http://www.baidu.com // 开始
-e=>end: 结束              // 结束
-c1=>condition: 条件1:>http://www.baidu.com[_parent]   // 判断条件
-c2=>condition: 条件2      // 判断条件
-c3=>condition: 条件3      // 判断条件
-io=>inputoutput: 输出     // 输出
-//----------------以上为定义参数-------------------------
+```flow                   
+st=>start: 开始|past:> http://www.baidu.com 
+e=>end: 结束             
+c1=>condition: 条件1:>http://www.baidu.com[_parent]   
+c2=>condition: 条件2      
+c3=>condition: 条件3      
+io=>inputoutput: 输出    
 
-//----------------以下为连接参数-------------------------
-// 开始->判断条件1为no->判断条件2为no->判断条件3为no->输出->结束
-st->c1(yes,right)->c2(yes,right)->c3(yes,right)->io->e
-c1(no)->e                   // 条件1不满足->结束
-c2(no)->e                   // 条件2不满足->结束
-c3(no)->e                   // 条件3不满足->结束
+st->c1(yes)->c2(yes)->c3(yes)->io->e
+c1(no)->e                   
+c2(no)->e                  
+c3(no)->e                 
 ```
 
 
-```flow                             // 流程
-st=>start: 启动|past:>http://www.baidu.com[blank] // 开始
-e=>end: 结束                      // 结束
-op1=>operation: 方案一             // 运算1
-sub2=>subroutine: 方案二|approved:>http://www.baidu.com[_parent]  // 运算2
-sub3=>subroutine: 重新制定方案        // 运算2
-cond1=>condition: 行不行？|request  // 判断条件1
-cond2=>condition: 行不行？          // 判断条件2
-io=>inputoutput: 结果满意           // 输出
+```flow                           
+st=>start: 启动|past:>http://www.baidu.com[blank] 
+e=>end: 结束                   
+op1=>operation: 方案一           
+sub2=>subroutine: 方案二|approved:>http://www.baidu.com[_parent]  
+sub3=>subroutine: 重新制定方案      
+cond1=>condition: 行不行？|request 
+cond2=>condition: 行不行？         
+io=>inputoutput: 结果满意           
 
-// 开始->方案1->判断条件->
 st->op1->cond1
-// 判断条件1为no->方案2->判断条件2为no->重新制定方案->方案1
 cond1(no,right)->sub2->cond2(no,right)->sub3(right)->op1
-cond1(yes)->io->e       // 判断条件满足->输出->结束
-cond2(yes)->io->e       // 判断条件满足->输出->结束
+cond1(yes)->io->e      
+cond2(yes)->io->e      
 ```
 
 ```sequence
@@ -135,6 +136,7 @@ Note right of 回家: 到家了
 回家-->>起床:
 Note left of 起床: 新的一天
 ```
+# 选项
 
 - [x] 选项一
 
@@ -142,13 +144,15 @@ Note left of 起床: 新的一天
 
 - [ ] [选项3]
 
+# 公式块
+
 $$
 x \href{why-equal.html}{=} y^2 + 1
 $$
 
 
-$$
+$
 x \href{why-equal.html}{=} y^2 + 1
-$$
+$
 
 
