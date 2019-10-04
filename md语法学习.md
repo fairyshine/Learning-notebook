@@ -155,4 +155,3 @@ $
 x \href{why-equal.html}{=} y^2 + 1
 $
 
-
