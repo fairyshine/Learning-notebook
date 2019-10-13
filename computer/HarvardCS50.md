@@ -34,3 +34,28 @@ printf("Hello world!\n");
 
 week 1
 
+C语言
+
+loops,variables,Boolean expressions,conditions,arrays(数组)...
+
+
+
+Compiler 编译器，如 GCC
+
+将代码转化为二进制，使计算机能处理
+
+
+
+GUI  图形界面
+
+CLI  命令行界面 command-line
+
+```C
+#inlucde<stdio.h>
+int
+main()
+{
+	printf("O hai,world!\n");
+}
+```
+
